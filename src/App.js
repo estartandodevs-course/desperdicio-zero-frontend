@@ -1,5 +1,13 @@
+import { useEffect } from 'react';
+
 function App() {
-  return <h1>Boilerplate CRA - Estartando Devs</h1>;
+  useEffect(() => {
+    fetch('meuendpoint.com.br/usuario')
+      .then(res => res.json())
+      .then(res => console.log(res));
+  }, []);
+
+  return <h1>Desperdício Zero</h1>;
 }
 
 export default App;
