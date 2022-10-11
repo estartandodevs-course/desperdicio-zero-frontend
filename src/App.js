@@ -1,13 +1,12 @@
-import { useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './routes/routes';
 
 function App() {
-  useEffect(() => {
-    fetch('meuendpoint.com.br/usuario')
-      .then(res => res.json())
-      .then(res => console.log(res));
-  }, []);
-
-  return <h1>Desperdício Zero</h1>;
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App;
