@@ -1,5 +1,5 @@
 function App() {
-  return <h1>Boilerplate CRA - Estartando Devs</h1>;
+  return <h1>Desperdicio zero</h1>;
 }
 
 export default App;
