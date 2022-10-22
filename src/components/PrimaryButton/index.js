@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button } from './style';
 
-function PrimaryButton(props) {
+function PrimaryButton(icon, text) {
   return (
     <Button>
-      {props.icon}
-      <p>{props.text}</p>
+      {icon}
+      <p>{text}</p>
     </Button>
   );
 }

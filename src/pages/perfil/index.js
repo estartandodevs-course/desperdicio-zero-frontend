@@ -13,7 +13,7 @@ function Perfil() {
   return (
     <PerfilContainer>
       <Header />
-      <PageTitle title={'Dados do Perfil'} />
+      <PageTitle title="Dados do Perfil" />
       <GrayBackground>
         <UserCard />
         <PrimaryButton icon={<MdAddCircleOutline size={34} />} text="Adicionar itens" />
