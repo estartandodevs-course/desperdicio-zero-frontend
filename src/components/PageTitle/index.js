@@ -1,12 +1,17 @@
 import React from 'react';
 import { TitleContainer } from './style';
+import PropTypes from 'prop-types';
 
-function PageTitle(props) {
+function PageTitle(title) {
   return (
     <TitleContainer>
-      <p>{props.title}</p>
+      <p>{title}</p>
     </TitleContainer>
   );
 }
+
+PageTitle.PropTypes = {
+  title: PropTypes.string,
+};
 
 export default PageTitle;
