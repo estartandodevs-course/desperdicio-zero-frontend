@@ -1,5 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './routes/routes';
+import { GlobalStyles } from './styles/GlobalStyle/GlobalStyle';
+
 function App() {
-  return <h1>Desperdicio zero</h1>;
+  return (
+    <BrowserRouter>
+      <GlobalStyles />
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App;
