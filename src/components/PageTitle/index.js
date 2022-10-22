@@ -1,6 +1,5 @@
 import React from 'react';
 import { TitleContainer } from './style';
-import PropTypes from 'prop-types';
 
 function PageTitle(title) {
   return (
@@ -9,9 +8,5 @@ function PageTitle(title) {
     </TitleContainer>
   );
 }
-
-PageTitle.PropTypes = {
-  title: PropTypes.string,
-};
 
 export default PageTitle;
