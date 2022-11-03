@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,13 +11,7 @@ export const HeaderContainer = styled.div`
   height: 60px;
   width: 100%;
 
-  svg:nth-child(1) {
-    position: absolute;
-    left: 21px;
-    color: #fff;
-  }
-
-  svg:nth-child(2) {
+  svg {
     width: 45%;
   }
 `;
