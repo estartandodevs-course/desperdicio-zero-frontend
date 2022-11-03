@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuContainer, MenuItem } from './style';
-import { ReactComponent as VencidoIcon } from '../../icons/itens-vencidos.svg';
-import { ReactComponent as AVencerIcon } from '../../icons/itens-a-vencer.svg';
+import { ReactComponent as VencidoIcon } from '../../assets/icons/itens-vencidos.svg';
+import { ReactComponent as AVencerIcon } from '../../assets/icons/itens-a-vencer.svg';
 
 function MenuList() {
   return (
