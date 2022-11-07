@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
+  z-index: 100;
   position: fixed;
   left: 0;
   top: 0;
