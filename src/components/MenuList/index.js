@@ -1,23 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MenuContainer, MenuItem } from './style';
-import { ReactComponent as VencidoIcon } from '../../assets/icons/itens-vencidos.svg';
-import { ReactComponent as AVencerIcon } from '../../assets/icons/itens-a-vencer.svg';
 
-function MenuList() {
+function MenuList({ MenuItems }) {
   return (
     <MenuContainer>
-      <MenuItem>
-        <AVencerIcon />
-        <p>Itens a vencer</p>
-      </MenuItem>
-      <MenuItem>
-        <VencidoIcon />
-        <p>Itens a vencer</p>
-      </MenuItem>
-      <MenuItem>
-        <AVencerIcon />
-        <p>Ir para a dispensa</p>
-      </MenuItem>
+      {MenuItems.map((item, index) => {
+        return (
+          <Link to={item.path} key={index}>
+            <MenuItem>
+              <item.icon />
+              <p>{item.name}</p>
+            </MenuItem>
+          </Link>
+        );
+      })}
     </MenuContainer>
   );
 }
