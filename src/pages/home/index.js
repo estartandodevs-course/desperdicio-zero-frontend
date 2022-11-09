@@ -37,7 +37,7 @@ function Home() {
     <>
       <Container>
         <Header />
-        <PageTitle title={'Dados do Perfil'} />
+        <PageTitle title="Dados do Perfil" />
         <GrayBackground>
           <UserCard />
           <Link to="/adicionar-alimento">
