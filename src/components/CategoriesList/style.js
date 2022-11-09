@@ -20,12 +20,14 @@ export const MenuItem = styled.div`
   }
 
   svg {
+    height: 40px;
+    width: 40px;
     margin: 0 30px 0 10px;
   }
 `;
 
 export const Icon = styled.img`
-  height: 20px;
+  height: 40px;
   margin-left: 20px;
   margin-right: 20px;
 `;
