@@ -4,8 +4,8 @@ import Header from '../../components/Header';
 import PageTitle from '../../components/PageTitle';
 import { Container } from '../../styles/PagesStyles/GlobalPageStyles';
 import FoodForm from '../../components/FoodForm';
-import { ReactComponent as NomeIcon } from '../../assets/icons/nome-icon.svg';
-import { ReactComponent as DataDeValidadeIcon } from '../../assets/icons/data-de-validade-icon.svg';
+import NomeIcon from '../../assets/icons/nome-icon.svg';
+import DataDeValidadeIcon from '../../assets/icons/data-de-validade-icon.svg';
 
 function AddProduct() {
   const inputs = [

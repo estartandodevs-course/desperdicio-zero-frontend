@@ -25,3 +25,9 @@ export const MenuItem = styled.div`
     margin: 0 30px 0 10px;
   }
 `;
+
+export const Icon = styled.img`
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+`;

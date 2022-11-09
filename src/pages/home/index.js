@@ -10,9 +10,9 @@ import WasteCounter from '../../components/WasteCounter';
 import NavBar from '../../components/NavBar';
 import { Container } from '../../styles/PagesStyles/GlobalPageStyles';
 import { Link } from 'react-router-dom';
-import { ReactComponent as VencidoIcon } from '../../assets/icons/itens-vencidos.svg';
-import { ReactComponent as AVencerIcon } from '../../assets/icons/itens-a-vencer.svg';
-import { ReactComponent as DispensaIcon } from '../../assets/icons/dispensa-icon.svg';
+import VencidoIcon from '../../assets/icons/itens-vencidos.svg';
+import AVencerIcon from '../../assets/icons/itens-a-vencer.svg';
+import DispensaIcon from '../../assets/icons/dispensa-icon.svg';
 
 function Home() {
   const menuItems = [

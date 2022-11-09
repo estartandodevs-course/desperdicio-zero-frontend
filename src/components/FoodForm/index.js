@@ -6,6 +6,7 @@ import {
   DateInputWrapper,
   FormContainer,
   FormWrapper,
+  Icon,
   InputContainer,
   InputWrapper,
   SelectWrapper,
@@ -20,7 +21,8 @@ function FormInput(props) {
   return (
     <InputContainer>
       <InputWrapper type={props.type} placeholder={props.placeholder} name={props.name} />
-      <props.icon />
+      {console.log('ICON form::', props.icon)}
+      <Icon src={props.icon} />
     </InputContainer>
   );
 }
@@ -34,7 +36,7 @@ function FormDateInput(props) {
         placeholder={props.placeholder}
         onFocus={e => (e.target.type = 'date')}
       />
-      <props.icon />
+      <Icon src={props.icon} />
     </InputContainer>
   );
 }
@@ -54,7 +56,7 @@ function FormSelect(props) {
           );
         })}
       </SelectWrapper>
-      <props.icon />
+      <Icon src={props.icon} />
     </InputContainer>
   );
 }

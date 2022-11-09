@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MenuContainer, MenuItem } from './style';
+import { Icon, MenuContainer, MenuItem } from './style';
 
 function MenuList({ MenuItems }) {
   return (
@@ -9,7 +9,7 @@ function MenuList({ MenuItems }) {
         return (
           <Link to={item.path} key={index}>
             <MenuItem>
-              <item.icon />
+              <Icon src={item.icon} />
               <p>{item.name}</p>
             </MenuItem>
           </Link>

@@ -16,3 +16,7 @@ export const HeaderContainer = styled.div`
     width: 45%;
   }
 `;
+
+export const Logo = styled.img`
+  height: 40px;
+`;

@@ -1,10 +1,10 @@
 import React from 'react';
-import { MenuContainer, MenuItem } from './style';
-import { ReactComponent as TodosIcon } from './../../assets/icons/todos-os-itens-icon.svg';
-import { ReactComponent as FrutasIcon } from './../../assets/icons/fruta-icon.svg';
-import { ReactComponent as CarnesIcon } from './../../assets/icons/carnes-icon.svg';
-import { ReactComponent as BebidasIcon } from './../../assets/icons/bebidas-icon.svg';
-import { ReactComponent as GraosIcon } from './../../assets/icons/graos-icon.svg';
+import { Icon, MenuContainer, MenuItem } from './style';
+import TodosIcon from './../../assets/icons/todos-os-itens-icon.svg';
+import FrutasIcon from './../../assets/icons/fruta-icon.svg';
+import CarnesIcon from './../../assets/icons/carnes-icon.svg';
+import BebidasIcon from './../../assets/icons/bebidas-icon.svg';
+import GraosIcon from './../../assets/icons/graos-icon.svg';
 
 function CategoriesList({ state, fitleredState }) {
   const menuItems = [
@@ -44,7 +44,7 @@ function CategoriesList({ state, fitleredState }) {
             }}
             key={index}
           >
-            <item.icon />
+            <Icon src={item.icon} />
             <p>{item.name}</p>
           </MenuItem>
         );
