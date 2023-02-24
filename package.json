@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "msw": "^0.47.4",
+    "msw": "^1.1.0",
     "prettier": "2.7.1"
   },
   "msw": {
